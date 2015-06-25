@@ -9,6 +9,7 @@ export default Ember.Component.extend({
 
   didInsertElement: function() {
     let element = this.$('span');
+    var initialX = 0;
 
     element.on('mousedown', (mouse_down_event) => {
       var initialX = mouse_down_event.pageX;
@@ -19,6 +20,7 @@ export default Ember.Component.extend({
         var mouse_dx = (event.pageX - initialX);
 
         this.set('value', this.changeValue(mouse_dx));
+        initialX = event.pageX;
       });
 
 
