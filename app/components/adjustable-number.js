@@ -1,0 +1,1 @@
+export { default } from 'ember-adjustable-number/components/adjustable-number';
