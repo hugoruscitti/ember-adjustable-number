@@ -1,19 +1,38 @@
-<h2>ember-adjustable-number</h2>
+  <div class="header">
+      <h1>ember-adjustable-number</h1>
 
-{{outlet}}
-
-<p>Input: {{input value=normalValue}}</p>
-
-<p>Normal adjustable-value: {{adjustable-number value=normalValue}}</p>
-
-<p>Text with min=0 and max=100:
-  <code>
-{{adjustable-number value=value min=0 max=100 speed=200}}
-</code>
-</p>
+      <h2>Create reactive documents like <a href="http://worrydream.com/Tangle/" target="_blank">Tangle</a></h2>
+  </div>
 
 
+<div class="content">
+    <h2>How to install?</h2>
 
-<p>
-When you eat <strong>{{cookies}}</strong> {{adjustable-number value=cookies label='cookies' min=2 max=100}} you consume <strong>{{calories}}</strong> calories.
-</p>
+    <p>
+      <pre>ember install ember-adjustable-number</pre>
+    </p>
+</div>
+
+<div class="content">
+    <h2>Examples</h2>
+
+    <p>Simple use the <em>adjustable-number</em> component like this:</p>
+
+    <h3>Simple binding</h3>
+
+    <p>Input: {{input value=normalValue}}</p>
+
+    <p>Normal adjustable-value: {{adjustable-number value=normalValue}}</p>
+
+
+    <h3>With limits</h3>
+
+    <p>Text with min=0 and max=100:
+      {{adjustable-number value=value min=0 max=100 speed=200}}
+    </p>
+
+    <h3>With computed properties</h3>
+
+    <p>When you eat <strong>{{cookies}}</strong> {{adjustable-number value=cookies label='cookies' min=2 max=100}} you consume <strong>{{calories}}</strong> calories.</p>
+
+</div>
