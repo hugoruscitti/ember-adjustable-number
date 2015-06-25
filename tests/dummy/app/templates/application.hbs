@@ -1,9 +1,19 @@
-<h2 id="title">ember-adjustable-number</h2>
+<h2>ember-adjustable-number</h2>
 
 {{outlet}}
 
-{{input value=value}}
+<p>Input: {{input value=normalValue}}</p>
 
-{{adjustable-number value=value speed=1}}
+<p>Normal adjustable-value: {{adjustable-number value=normalValue}}</p>
 
+<p>Text with min=0 and max=100:
+  <code>
 {{adjustable-number value=value min=0 max=100 speed=200}}
+</code>
+</p>
+
+
+
+<p>
+When you eat <strong>{{cookies}}</strong> {{adjustable-number value=cookies label='cookies' min=2 max=100}} you consume <strong>{{calories}}</strong> calories.
+</p>

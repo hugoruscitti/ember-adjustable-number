@@ -1,9 +1,5 @@
-<style media="screen">
-  .adjustable-number {
-    border-bottom: 1px dotted blue;
-    cursor: col-resize;
-  }
-</style>
-
-
-<p>Number: <span class='adjustable-number'>{{value}}</span></p>
+{{#if label}}
+  {{label}}
+{{else}}
+  {{value}}
+{{/if}}

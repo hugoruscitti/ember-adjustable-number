@@ -1,18 +1,23 @@
 import Ember from 'ember';
 import layout from '../templates/components/adjustable-number';
 
+var {$} = Ember;
+
 export default Ember.Component.extend({
   layout: layout,
+  classNames: ['adjustable-number'],
+
   min: null,
   max: null,
   speed: 10,
+  label: null,
 
   didInsertElement: function() {
-    let element = this.$('span');
+    let element = this.$();
     var initialX = 0;
 
     element.on('mousedown', (mouse_down_event) => {
-      var initialX = mouse_down_event.pageX;
+      initialX = mouse_down_event.pageX;
       this.disableSelection();
       this.saveAndChangeCursor(element);
 

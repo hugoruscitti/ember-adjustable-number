@@ -1,0 +1,12 @@
+.adjustable-number {
+  border-bottom: 1px dashed #46f;
+  cursor: col-resize;
+  display: inline-block;
+  color: #46f;
+}
+
+code {
+  background-color: rgb(255, 200, 200);
+  padding: 2px;
+  margin: 2px;
+}
