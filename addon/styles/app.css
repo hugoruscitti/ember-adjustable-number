@@ -1,3 +1,6 @@
-body {
-  color: red;
+.adjustable-number {
+  border-bottom: 1px dashed #46f;
+  cursor: col-resize;
+  display: inline-block;
+  color: #46f;
 }
