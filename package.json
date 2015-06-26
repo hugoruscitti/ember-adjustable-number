@@ -1,6 +1,6 @@
 {
   "name": "ember-adjustable-number",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple simple way to create reactive documents like Tangle",
   "directories": {
     "doc": "doc",
