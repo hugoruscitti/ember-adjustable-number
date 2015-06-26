@@ -9,7 +9,6 @@ export default Ember.Component.extend({
 
   min: null,
   max: null,
-  speed: 10,
   label: null,
 
   didInsertElement: function() {
