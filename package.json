@@ -1,7 +1,7 @@
 {
   "name": "ember-adjustable-number",
   "version": "0.0.1",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "A simple simple way to create reactive documents like Tangle",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,11 +11,11 @@
     "build": "ember build",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "https://github.com/hugoruscitti/ember-adjustable-number",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Hugo Ruscitti",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.0.2",
@@ -40,6 +40,7 @@
     "ember-cli-babel": "^5.0.0"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "demoURL": "https://github.com/hugoruscitti/ember-adjustable-number"
   }
 }
