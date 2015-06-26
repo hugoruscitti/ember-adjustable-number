@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
+    aNumber: 50,
     value: 1,
     cookies: 10,
     normalValue: 100,

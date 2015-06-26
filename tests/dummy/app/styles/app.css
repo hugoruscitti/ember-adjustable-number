@@ -26,20 +26,19 @@ code {
         font-weight: 100;
         line-height: 1.5;
         margin: 0;
-        color: #666;
         letter-spacing: -0.02em;
     }
 
     h2 {
       margin: 2em 0 1em 0;
       font-weight: 300;
-      color: #888;
+      color: rgb(53, 178, 223);
     }
 
     h3 {
       margin: 2em 0 1em 0;
       font-weight: 300;
-      color: #888;
+      color: rgb(53, 178, 223);
     }
 
 
@@ -84,3 +83,29 @@ code {
     .content p {
     font-size: 1.125em;
     }
+
+
+pre {
+  background-color: rgb(38, 171, 218);
+  color: white;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+div.example {
+  margin-left: 50px;
+}
+
+
+pre.pre-example {
+  color: black;
+  background-color: rgb(231, 231, 231);
+  border: 1px solid rgb(205, 205, 205);
+}
+
+
+div.footer {
+  text-align: center;
+  color: gray;
+  padding: 3em;
+}
