@@ -1,25 +1,12 @@
 # Ember-adjustable-number
 
-This README outlines the details of collaborating on this Ember addon.
 
-## Installation
+A simple simple way to create reactive documents
+like [Tangle](http://worrydream.com/Tangle/)
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
 
-## Running
+See [demo site](http://hugoruscitti.github.io/ember-adjustable-number/)
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+## How to install?
 
-## Running Tests
-
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+ember install ember-adjustable-number
