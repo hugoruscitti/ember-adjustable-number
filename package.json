@@ -41,6 +41,6 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config",
-    "demoURL": "https://github.com/hugoruscitti/ember-adjustable-number"
+    "demoURL": "http://hugoruscitti.github.io/ember-adjustable-number/"
   }
 }
