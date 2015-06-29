@@ -10,6 +10,7 @@ export default Ember.Component.extend({
   min: null,
   max: null,
   label: null,
+  speed: null,
 
   didInsertElement: function() {
     let element = this.$();
@@ -17,14 +18,27 @@ export default Ember.Component.extend({
 
     element.on('mousedown', (mouse_down_event) => {
       initialX = mouse_down_event.pageX;
+      this.set('original_value', this.get('value'));
       this.disableSelection();
       this.saveAndChangeCursor(element);
 
       $('body').on('mousemove', (event) => {
-        var mouse_dx = (event.pageX - initialX);
+        var speed = this.get('speed') || 9.0;
+
+        if (speed > 10) {
+          speed = 10;
+        } else {
+          if (speed < 1) {
+            speed = 1;
+          }
+        }
+
+
+        var mouse_dx = (event.pageX - initialX) / (101 - speed*10);
+
 
         this.set('value', this.changeValue(mouse_dx));
-        initialX = event.pageX;
+        //initialX = event.pageX;
       });
 
 
@@ -70,7 +84,7 @@ export default Ember.Component.extend({
   },
 
   changeValue: function(mouse_dx) {
-    let newValue = parseInt(parseInt(this.get('value'), 10) + mouse_dx, 10);
+    let newValue = parseInt(parseInt(this.get('original_value'), 10) + mouse_dx, 10);
     let min = this.get('min');
     let max = this.get('max');
 
