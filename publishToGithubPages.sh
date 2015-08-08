@@ -12,3 +12,4 @@ git add .
 git commit -m "Publishing to github pages"
 git push origin gh-pages
 git checkout master
+echo "deployed to: http://hugoruscitti.github.io/ember-adjustable-number/"
