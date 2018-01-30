@@ -292,7 +292,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("dummy/app")["default"].create({"name":"ember-adjustable-number","version":"0.2.1+c9957569"});
+  require("dummy/app")["default"].create({"name":"ember-adjustable-number","version":"0.2.1+bfa2fbbe"});
 }
 
 /* jshint ignore:end */
